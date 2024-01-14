@@ -16,7 +16,6 @@
 
 package com.android.launcher3.qsb;
 
-import android.appwidget.AppWidgetProviderInfo;
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -49,11 +48,6 @@ public class QsbWidgetHostView extends NavigableAppWidgetHostView {
         super.updateAppWidget(remoteViews);
     }
 
-    @Override
-    public void setAppWidget(int appWidgetId, AppWidgetProviderInfo info) {
-        QsbContainerView.updateDefaultLayout(getContext(), info);
-        super.setAppWidget(appWidgetId, info);
-    }
 
     public boolean isReinflateRequired(int orientation) {
         // Re-inflate is required if the orientation has changed since last inflation.
