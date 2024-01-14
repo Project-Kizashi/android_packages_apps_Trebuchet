@@ -15,5 +15,5 @@
         android:max="100"
         android:min="0"
         settings:units="%"
-        android:defaultValue="75" />
+        android:defaultValue="100" />
 </androidx.preference.PreferenceScreen>

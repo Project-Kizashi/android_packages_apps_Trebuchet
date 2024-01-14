@@ -801,6 +801,6 @@ public final class Utilities {
 
     public static int getAllAppsScrimAlpha(Context context) {
         SharedPreferences prefs = getPrefs(context.getApplicationContext());
-        return prefs.getInt(KEY_ALL_APPS_BACKGROUND_ALPHA, 75);
+        return prefs.getInt(KEY_ALL_APPS_BACKGROUND_ALPHA, 100);
     }
 }
